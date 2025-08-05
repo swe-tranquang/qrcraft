@@ -58,7 +58,7 @@
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/yourusername/qrcraft.git
+   git clone https://github.com/swe-tranquang/qrcraft.git
    cd qrcraft
    ```
 
@@ -240,9 +240,9 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 🙋‍♂️ Support
 
-- **Documentation**: [GitHub Wiki](https://github.com/yourusername/qrcraft/wiki)
-- **Issues**: [GitHub Issues](https://github.com/yourusername/qrcraft/issues)
-- **Discussions**: [GitHub Discussions](https://github.com/yourusername/qrcraft/discussions)
+- **Documentation**: [GitHub Wiki](https://github.com/swe-tranquang/qrcraft/wiki)
+- **Issues**: [GitHub Issues](https://github.com/swe-tranquang/qrcraft/issues)
+- **Discussions**: [GitHub Discussions](https://github.com/swe-tranquang/qrcraft/discussions)
 
 ---
 
@@ -258,10 +258,10 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 <div align="center">
 
-**Made with ❤️ by the QRCraft Team**
+**Made with ❤️ by the Hiki**
 
-[![GitHub Stars](https://img.shields.io/github/stars/yourusername/qrcraft?style=social)](https://github.com/yourusername/qrcraft)
-[![GitHub Forks](https://img.shields.io/github/forks/yourusername/qrcraft?style=social)](https://github.com/yourusername/qrcraft)
+[![GitHub Stars](https://img.shields.io/github/stars/swe-tranquang/qrcraft?style=social)](https://github.com/swe-tranquang/qrcraft)
+[![GitHub Forks](https://img.shields.io/github/forks/swe-tranquang/qrcraft?style=social)](https://github.com/swe-tranquang/qrcraft)
 
 [⬆ Back to Top](#-qrcraft---modern-qr-code-generator)
 
