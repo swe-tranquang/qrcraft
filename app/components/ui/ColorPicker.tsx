@@ -143,7 +143,7 @@ export function ColorPicker({ label, value, onChange, presetColors }: ColorPicke
                   <span>Popular Colors</span>
                 </label>
                 <div className="grid grid-cols-6 gap-2.5">
-                  {colors.map((color, index) => (
+                  {colors.map((color) => (
                     <button
                       key={color}
                       type="button"
