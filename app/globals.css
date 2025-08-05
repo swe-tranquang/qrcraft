@@ -1,26 +1,102 @@
-@import "tailwindcss";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 :root {
   --background: #ffffff;
-  --foreground: #171717;
-}
-
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --foreground: #334155;
+  
+  /* Modern Sky Blue Color System */
+  --sky-50: #f0f9ff;
+  --sky-100: #e0f2fe;
+  --sky-200: #bae6fd;
+  --sky-300: #7dd3fc;
+  --sky-400: #38bdf8;
+  --sky-500: #0ea5e9;
+  --sky-600: #0284c7;
+  --sky-700: #0369a1;
+  --sky-800: #075985;
+  --sky-900: #0c4a6e;
+  
+  /* Accent colors */
+  --cyan-400: #22d3ee;
+  --cyan-500: #06b6d4;
+  --blue-400: #60a5fa;
+  --blue-500: #3b82f6;
+  --purple-400: #a78bfa;
+  --purple-500: #8b5cf6;
+  
+  /* Glass morphism variables - Modern theme */
+  --glass-bg: rgba(255, 255, 255, 0.95);
+  --glass-border: rgba(56, 189, 248, 0.2);
+  --glass-shadow: 0 20px 50px -12px rgba(56, 189, 248, 0.15);
+  
+  /* Card backgrounds */
+  --card-bg: rgba(255, 255, 255, 0.98);
+  --card-border: rgba(56, 189, 248, 0.15);
+  
+  /* Primary gradients */
+  --primary-gradient: linear-gradient(135deg, #0ea5e9 0%, #22d3ee 50%, #38bdf8 100%);
+  --primary-gradient-hover: linear-gradient(135deg, #0284c7 0%, #06b6d4 50%, #0ea5e9 100%);
+  --accent-gradient: linear-gradient(135deg, #38bdf8 0%, #60a5fa 50%, #a78bfa 100%);
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-geist-sans), system-ui, sans-serif;
+}
+
+/* Utility classes */
+.gradient-text {
+  background: var(--primary-gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+}
+
+.gradient-bg {
+  background: var(--primary-gradient);
+}
+
+.gradient-bg-hover {
+  background: var(--primary-gradient-hover);
+}
+
+.accent-gradient {
+  background: var(--accent-gradient);
+}
+
+.glass-effect {
+  background: var(--glass-bg);
+  border: 1px solid var(--glass-border);
+  box-shadow: var(--glass-shadow);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+}
+
+.card-effect {
+  background: var(--card-bg);
+  border: 1px solid var(--card-border);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--sky-300);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--sky-400);
 }
